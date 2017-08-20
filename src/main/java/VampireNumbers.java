@@ -1,5 +1,7 @@
 /*
 * Created by  WangDi  on 2017/8/8
+*
+* 吸血鬼数字：位数为偶数，可由一对数字相乘，这种数字包含乘积一半位数的数字，并且由两个0结尾的数字不允许
 */
 public class VampireNumbers {//一脸懵逼^_^
 

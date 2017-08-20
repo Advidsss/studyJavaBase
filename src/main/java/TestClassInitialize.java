@@ -3,9 +3,9 @@
 */
 public class TestClassInitialize {
 
-    static int i1;
+    static double i1;
     char c;
-    int i;
+    double i;
 
 /*
 *静态域随着类的加载而加载
