@@ -13,4 +13,14 @@ public class MyException extends Exception {
 
         super(msg);
     }
+
+    public MyException(String msg,Throwable cause){
+
+        super(msg,cause);
+    }
+
+    public MyException(Throwable cause){
+
+        super(cause);
+    }
 }
