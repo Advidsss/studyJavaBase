@@ -10,5 +10,6 @@ public class Spider {
         Document document = htmlDocument.getOutHtml("http://music.163.com/");
         HandleHtml handleHtml = new HandleHtml();
         handleHtml.saveHtmlToLocal(document,"kugou","html");
+
     }
 }
