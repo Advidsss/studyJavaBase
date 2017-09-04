@@ -1,2 +1,15 @@
 java转义字符学习:
 反斜杠:\\,两个反斜杠:\\\\,双引号:\",单引号:\'(加不加反斜杠都无所谓),换行:\n,回车:\t
+
+
+
+
+
+
+Extjs开发记录:
+
+var a = '{"beginYear":1,"endYear":3,"status":"Y","yearList":"444"}';
+Ext.JSON.decode()//将json字符串转化为json对象，一般用于解析后台传递过来的数据，也可以在后台进行封装，比如用map进行封装，前台直接就可以获得一个json对象
+
+var b = {"beginYear":1,"endYear":3,"status":"Y","yearList":"444"};//json对象
+Ext.JSON.encode()//将JSON对象转化为JSON字符串，一般用于将数据提交后台
