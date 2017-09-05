@@ -7,6 +7,7 @@ public class TestAnimal {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
         //animal为形参
         int i = 0;
         AnimalImpl animalImpl = new AnimalImpl((animal)->{
@@ -20,5 +21,8 @@ public class TestAnimal {
             return a;
         });
 
+=======
+        AnimalImpl animalImpl = new AnimalImpl();
+>>>>>>> 42cad9faa1ec2211bbbde5a2c1ef99541cca0f1b
     }
 }
