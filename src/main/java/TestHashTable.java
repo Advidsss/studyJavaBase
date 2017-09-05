@@ -12,17 +12,14 @@ public class TestHashTable{
     public static void main(String[] args) throws InterruptedException{
 
         for (int i = 0; i < 10; i++) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
 
-                    if(ht.get("a") == null){
+            new Thread(()->{
 
-                        ht.put("a",1);
-                    }else{
-
-                        ht.put("a",ht.get("a") +1);
-                    }
+                if(ht.get("a") == null){
+                    ht.put("a",1);
+                }
+                else {
+                    ht.put("a",ht.get("a") + 1);
                 }
             }).start();
         }
