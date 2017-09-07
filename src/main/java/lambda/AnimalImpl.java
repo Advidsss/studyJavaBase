@@ -5,18 +5,14 @@ package lambda;
 */
 public class AnimalImpl{
 
-<<<<<<< HEAD
     private Animal a = null;
-=======
 
->>>>>>> 42cad9faa1ec2211bbbde5a2c1ef99541cca0f1b
     public AnimalImpl(){
 
     }
 
     public AnimalImpl(Animal animal){
 
-<<<<<<< HEAD
         //传入实际参数
         System.out.println(animal.runDistance(35));
         a = animal;
@@ -26,8 +22,6 @@ public class AnimalImpl{
 
         //传入实际参数
         System.out.println(animal.runDistance(6));
-=======
         System.out.println(animal.runDistance(40));
->>>>>>> 42cad9faa1ec2211bbbde5a2c1ef99541cca0f1b
     }
 }
