@@ -10,23 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Runnable run = new MyRunnable();
-        Thread t1 = new Thread(run);
-        Thread t2 = new Thread(run);
-        t1.start();
-        t2.start();
-
+        List<String> list = new ArrayList<String>();
+        list.add("zhangsan");
+        list.add("lisi");
+        list.forEach(s-> System.out.println(s));
     }
 
-}
-
-class MyRunnable implements Runnable {
-
-    @Override
-    public void run() {
-
-        for (int i = 0; i < 200; i++) {
-            System.out.println(Thread.currentThread().getName() + "_____________________" + i);
-        }
-    }
 }
