@@ -1,5 +1,7 @@
 根据端口号查找进程（netstat -lnp|grep 8081(端口号)）
 根据进程查找端口号（netstat -naop|grep 3434(进程号)）
+根据进程查看线程（ps -Lf 29295（进程号））
+根据进程以树的形式查看线程（pstree -p 29295（进程号））
 列出文件或者文件夹详细信息(stat 文件/文件夹/*(所有))
 列出当前目录下所有文件（ls -l）(ls -l t*(列出以t开头的文件或者文件夹))
 列出当前目录下所有文件(ls -a/-all)(可使用通配符)
@@ -12,3 +14,19 @@ pwd (显示当前目录)
 显示当前登录用户(who)
 显示当前操作用户(whoami)
 现实最占资源的进程(top)
+
+
+
+
+putty
+* Default Foreground: 255/255/255  
+* Default Background: 51/51/51  
+* ANSI Black: 77/77/77  
+* ANSI Green: 152/251/152  
+* ANSI Yellow: 240/230/140  
+* ANSI Blue: 205/133/63  
+* ANSI Blue Bold 135/206/235  
+* ANSI Magenta: 255/222/173 or 205/92/92  
+* ANSI Cyan: 255/160/160  
+* ANSI Cyan Bold: 255/215/0  
+* ANSI White: 245/222/179
