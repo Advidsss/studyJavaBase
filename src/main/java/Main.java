@@ -1,7 +1,5 @@
 
-import java.util.*;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+import util.CalendarUtils;
 
 /*
 * Created by  WangDi  on 2017/8/3
@@ -10,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        List<String> list = new ArrayList<String>();
-        list.add("zhangsan");
-        list.add("lisi");
-        list.forEach(s-> System.out.println(s));
+
+        boolean b1 = true;
+        boolean b2 = false;
+
     }
 
 }

@@ -7,21 +7,25 @@ public class VampireNumbers {//一脸懵逼^_^
 
     static int a(int i){
 
+        //千位上的数字
         return i / 1000;
     }
 
     static int b(int i){
 
+        //百位上的数字
         return (i%1000)/100;
     }
 
     static int c(int i){
 
+        //十位上的数字
         return ((i%1000)%100)/10;
     }
 
     static int d(int i){
 
+        //个位上的数字
         return ((i%1000)%100)%10;
     }
 
