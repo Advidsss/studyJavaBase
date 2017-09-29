@@ -2,6 +2,8 @@ package quartz;
 
 import org.quartz.*;
 
+import java.util.Date;
+
 /*
 * Created by  WangDi  on 2017/9/19 0019
 */
@@ -18,5 +20,7 @@ public class HelloJob implements Job{
         JobDataMap dataMap2 = jobExecutionContext.getTrigger().getJobDataMap();
         System.out.println(dataMap1.get("message"));
         System.out.println(dataMap2.get("message"));
+        System.out.println(new Date());
+        System.out.println("\n\n");
     }
 }

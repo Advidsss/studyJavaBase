@@ -24,8 +24,7 @@ public class HelloScheduler {
                 usingJobData("message","Trigger").
                 usingJobData("booleanValue",true).
                 startNow().withSchedule(
-                    SimpleScheduleBuilder.simpleSchedule().
-                    withIntervalInSeconds(2).repeatForever()
+                    CronScheduleBuilder.cronSchedule("0/5 * * * * ? *")
                 ).build();
 
         //创建调度实例
@@ -37,7 +36,19 @@ public class HelloScheduler {
             scheduler.start();
             scheduler.scheduleJob(jobDetail,trigger);
 
+            //睡眠两秒之后挂起
+            Thread.sleep(2000);
+            /*scheduler.shutdown()不能再被重启*/
+            scheduler.standby();
+
+            //睡眠3秒之后再启动
+            Thread.sleep(3000);
+            scheduler.start();
+
+
         } catch (SchedulerException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
