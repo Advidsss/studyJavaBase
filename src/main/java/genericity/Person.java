@@ -7,7 +7,9 @@ package genericity;
 
 public class Person <T> {
 
-    <T> T show(){
-         return null;
+     <T> T show(T t){
+         System.out.println(t);
+         Object obj = null;
+         return (T)obj;
     }
 }
